@@ -1,19 +1,41 @@
-a{
+a {
   color: white;
 }
+
 .navbar {
   background-color: #5d5656;
   font-family: 'Angsana New';
   transition: transform 0.3s ease-in-out;
 }
+
 .hidden-navbar {
   transform: translateY(-100%);
 }
+
 .nav-search {
   display: flex;
   align-items: center;
   margin-left: 15px;
 }
+
+.nav-search-container {
+  position: relative;
+  display: inline-block;
+}
+
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  transform: translateY(-50%);
+  color: #999;
+}
+
+.search-input {
+  padding-left: 35px;
+  /* ปรับ padding ให้มีพื้นที่สำหรับไอคอน */
+}
+
 input {
   width: 300px;
 }
