@@ -1,0 +1,19 @@
+a{
+  color: white;
+}
+.navbar {
+  background-color: #5d5656;
+  font-family: 'Angsana New';
+  transition: transform 0.3s ease-in-out;
+}
+.hidden-navbar {
+  transform: translateY(-100%);
+}
+.nav-search {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+input {
+  width: 300px;
+}
