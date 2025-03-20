@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Movies } from '../../interfaces/movies';
 
 @Component({
   selector: 'app-movies-card',
@@ -7,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './movies-card.component.css'
 })
 export class MoviesCardComponent {
-
+  @Input() movies: Movies | undefined;
 }
