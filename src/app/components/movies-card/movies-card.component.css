@@ -1,0 +1,15 @@
+.movie-card {
+  width: 300px;
+  margin-left: 30px;
+  padding: 0px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  color: black;
+  text-align: left;
+  background-color: #fff;
+}
+
+.poster {
+  width: 100%;
+  border-radius: 20px;
+}

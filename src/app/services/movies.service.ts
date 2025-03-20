@@ -7,12 +7,12 @@ import { Movies } from '../interfaces/movies';
 export class MoviesService {
   bannerMovies: Movies[] = [{
     title: 'F1',
-    type: '',
+    type: 'Movie',
     releaseYear: 2025,
     ageRating: '',
     duration: 0,
     rating: 0,
-    posterUrl: '',
+    posterUrl: 'https://m.media-amazon.com/images/M/MV5BNGI0MDI4NjEtOWU3ZS00ODQyLWFhYTgtNGYxM2ZkM2Q2YjE3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg',
     trailerUrl: 'https://youtu.be/69ffwl-8pCU?si=LeEWs2uDJBCBFFO6',
     genres: [],
     description: '',
