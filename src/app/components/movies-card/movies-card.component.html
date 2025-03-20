@@ -1,5 +1,12 @@
 <div class="movie-card">
     <img [src]="movies?.posterUrl" alt="{{ movies?.title }}" class="poster">
-    <h3>{{ movies?.title }}</h3>
-    <p>{{ movies?.rating }}</p>
+    <div class="movie-details">
+        <span>{{ movies?.title }}</span>
+        
+        <div class="rating">
+          <span>⭐ {{ movies?.rating }}</span>
+        </div>
+
+        <button class="details-btn" [routerLink]="['/movies', movies?.title]">ดูรายละเอียด</button>
+      </div>
 </div>

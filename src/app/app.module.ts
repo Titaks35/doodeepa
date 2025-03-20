@@ -9,6 +9,7 @@ import { MoviesComponent } from './components/movies/movies.component';
 import { MoviesCardComponent } from './components/movies-card/movies-card.component';
 import { MovieDetailComponent } from './components/movie-detail/movie-detail.component';
 import { LoginComponent } from './components/login/login.component';
+import { RandomMoviesComponent } from './components/random-movies/random-movies.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { LoginComponent } from './components/login/login.component';
     MoviesComponent,
     MoviesCardComponent,
     MovieDetailComponent,
-    LoginComponent
+    LoginComponent,
+    RandomMoviesComponent
   ],
   imports: [
     BrowserModule,
