@@ -4,6 +4,10 @@ body {
     font-family: 'JasmineUPC';
 }
 
+a {
+    text-decoration: none;
+}
+
 .movie-banner {
     position: relative;
     width: 100%;
