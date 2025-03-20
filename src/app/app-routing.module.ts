@@ -7,14 +7,14 @@ import { MovieDetailComponent } from './components/movie-detail/movie-detail.com
 import { RandomMoviesComponent } from './components/random-movies/random-movies.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent, pathMatch: 'full' },
+  { path: 'home', component: HomeComponent },
   { path: 'movies', component: MoviesComponent },
   { path: 'login', component: LoginComponent},
   { path: 'movies/:title', component: MovieDetailComponent },
   { path: 'random-movies', component: RandomMoviesComponent }, // Unused
   /* { path: 'tvs', component: TvsComponent },
   { path: 'profile', component: ProfileComponent }, */
-  { path: 'home', redirectTo: '/'},
+  { path: '', redirectTo: '/login', pathMatch: 'full'},
 ];
 
 @NgModule({
