@@ -11,7 +11,6 @@ import { Movies } from '../../interfaces/movies';
   styleUrls: ['./movie-detail.component.css']
 })
 export class MovieDetailComponent {
-
   constructor(
     private route: ActivatedRoute,
     private moviesService: MoviesService,
@@ -19,8 +18,7 @@ export class MovieDetailComponent {
   ) {
     const movieId = Number(this.route.snapshot.paramMap.get('id'));
   }
-
-  sanitizeUrl(url: string): SafeResourceUrl {
-    return this.sanitizer.bypassSecurityTrustResourceUrl(url.replace("watch?v=", "embed/"));
-  }
 }
+
+
+
