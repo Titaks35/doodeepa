@@ -11,13 +11,25 @@
       </div>
     </a>
   </div>
-  <div class="mt-3 mb-5">
+  <div class="mt-3">
     <div class="movie-header">
-      <h2 style="color: white; font-weight: bold; margin-left: 50px;">Suggestions</h2>
+      <h2 style="color: white; font-weight: bold; margin-left: 50px;">เรื่องที่แนะนำ</h2>
     </div>
     <div class="movie-container">
       <app-movies-card *ngFor="
-              let movies of MoviesService.bannerMovies;
+              let movies of MoviesService.suggestionMovies;
+              let i = index;
+              let last = last
+            " [movies]="movies"></app-movies-card>
+    </div>
+  </div>
+  <div class="mt-3 mb-5">
+    <div class="movie-header">
+      <h2 style="color: white; font-weight: bold; margin-left: 50px;">มาแรง</h2>
+    </div>
+    <div class="movie-container">
+      <app-movies-card *ngFor="
+              let movies of MoviesService.newInThisMonth;
               let i = index;
               let last = last
             " [movies]="movies"></app-movies-card>
