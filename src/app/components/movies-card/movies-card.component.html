@@ -4,7 +4,8 @@
         <span>{{ movies?.title }}</span>
         
         <div class="rating">
-          <span>⭐ {{ movies?.rating }}</span>
+          <span *ngIf="movies?.rating">⭐ {{ movies?.rating }}</span>
+          <span *ngIf="movies?.rating === 0" style="color: grey;">&nbsp;No review</span>
         </div>
 
         <button class="details-btn" [routerLink]="['/movies', movies?.title]">ดูรายละเอียด</button>

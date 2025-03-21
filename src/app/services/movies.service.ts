@@ -17,21 +17,23 @@ export class MoviesService {
     genres: [],
     description: '',
     availableOn: [],
-    userReviews: []
-  },{
+    userReviews: [],
+    id: 0
+  }, {
     title: '22222',
     type: '',
     releaseYear: 0,
     ageRating: '',
     duration: 0,
-    rating: 0,
+    rating: 5,
     posterUrl: 'https://m.media-amazon.com/images/M/MV5BNGI0MDI4NjEtOWU3ZS00ODQyLWFhYTgtNGYxM2ZkM2Q2YjE3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg',
     trailerUrl: '',
     genres: [],
     description: '',
     availableOn: [],
-    userReviews: []
-  },{
+    userReviews: [],
+    id: 1
+  }, {
     title: '33333',
     type: '',
     releaseYear: 0,
@@ -43,8 +45,9 @@ export class MoviesService {
     genres: [],
     description: '',
     availableOn: [],
-    userReviews: []
-  },{
+    userReviews: [],
+    id: 2
+  }, {
     title: '44444',
     type: '',
     releaseYear: 0,
@@ -56,7 +59,8 @@ export class MoviesService {
     genres: [],
     description: '',
     availableOn: [],
-    userReviews: []
+    userReviews: [],
+    id: 3
   }
   ];
 
@@ -73,6 +77,10 @@ export class MoviesService {
   actionMovies: Movies[] = [];
 
   animeMovies: Movies[] = [];
+
+  getMovieById(id: number): Movies | undefined{
+    return this.suggestionMovies.find(movies => movies.id === id);
+  }
 
   constructor() { }
 }
