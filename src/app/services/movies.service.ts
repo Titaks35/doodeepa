@@ -5,7 +5,9 @@ import { Movies } from '../interfaces/movies';
   providedIn: 'root'
 })
 export class MoviesService {
-  bannerMovies: Movies[] = [{
+  bannerMovies: Movies[] = [];
+
+  suggestionMovies: Movies[] = [{
     title: 'F1',
     type: 'Movie',
     releaseYear: 2025,
@@ -61,10 +63,7 @@ export class MoviesService {
     availableOn: [],
     userReviews: [],
     id: 3
-  }
-  ];
-
-  suggestionMovies: Movies[] = [];
+  }];
 
   newInThisMonth: Movies[] = [];
 

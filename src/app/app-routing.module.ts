@@ -4,14 +4,14 @@ import { HomeComponent } from './components/home/home.component';
 import { MoviesComponent } from './components/movies/movies.component';
 import { LoginComponent } from './components/login/login.component';
 import { MovieDetailComponent } from './components/movie-detail/movie-detail.component';
+import { ProfileComponent } from './components/profile/profile.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'movies', component: MoviesComponent },
   { path: 'movies/:title', component: MovieDetailComponent },
   { path: 'login', component: LoginComponent},
-  /* { path: 'tvs', component: TvsComponent },
-  { path: 'profile', component: ProfileComponent }, */
+  { path: 'profile', component: ProfileComponent },
   { path: '', redirectTo: '/login', pathMatch: 'full'},
 ];
 
